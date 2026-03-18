@@ -1,0 +1,10 @@
+Product Model Data Preparation Metadata
+======================================
+source_rows: 150
+model_rows: 150
+train_rows: 120
+test_rows: 30
+target: product_category
+classes: Books, Clothing, Electronics, Groceries, Sports
+numeric_features: purchase_amount, customer_rating, engagement_score_mean, purchase_interest_score_mean, review_sentiment_score_mean, social_profile_rows, purchase_month, purchase_day_of_week, is_weekend_purchase, high_value_purchase, purchase_day_of_year
+categorical_features: social_media_platform
