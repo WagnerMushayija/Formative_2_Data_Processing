@@ -1,0 +1,11 @@
+Product Recommendation Model Evaluation
+=======================================
+best_model: random_forest
+accuracy: 0.1667
+f1_macro: 0.1365
+loss: 1.7924
+
+All Candidate Models
+--------------------
+random_forest: accuracy=0.1667, f1_macro=0.1365, loss=1.7924
+logistic_regression: accuracy=0.1333, f1_macro=0.1221, loss=1.9349
