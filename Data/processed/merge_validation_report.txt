@@ -1,0 +1,27 @@
+Merge Validation Report
+=======================
+total_rows: 150
+duplicate_transaction_ids: 0
+missing_customer_id_new: 0
+rows_missing_all_social_features: 33
+social_match_rate: 0.7800
+
+Column Null Counts
+------------------
+social_media_platform: 33
+social_profile_rows: 33
+engagement_score_mean: 33
+review_sentiment_score_mean: 33
+purchase_interest_score_mean: 33
+customer_rating: 10
+customer_id_legacy: 0
+product_category: 0
+transaction_id: 0
+customer_id_new: 0
+purchase_amount: 0
+purchase_date: 0
+purchase_year: 0
+purchase_month: 0
+purchase_day_of_week: 0
+is_weekend_purchase: 0
+high_value_purchase: 0
