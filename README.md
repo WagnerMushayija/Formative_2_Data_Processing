@@ -38,11 +38,6 @@ Formative_2_Data_Processing/
 |   |-- product_model_metrics.csv
 |   `-- product_model_evaluation.txt
 |-- scripts/
-|   |-- 01_prepare_sources.py
-|   |-- 02_merge_datasets.py
-|   |-- 03_validate_merge.py
-|   |-- 04_prepare_product_model_data.py
-|   `-- 05_train_product_model.py
 |-- requirements.txt
 `-- README.md
 ```
@@ -70,13 +65,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 Run from the repository root in this exact order:
 
-```powershell
-python scripts/01_prepare_sources.py
-python scripts/02_merge_datasets.py
-python scripts/03_validate_merge.py
-python scripts/04_prepare_product_model_data.py
-python scripts/05_train_product_model.py
-```
+
 
 ## Pipeline Stages
 
