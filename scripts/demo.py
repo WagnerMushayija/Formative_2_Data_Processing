@@ -39,7 +39,7 @@ def run_system(face_image=None, voice_audio=None, customer_id=None):
     
     print("-" * 50)
     if not customer_id:
-        customer_id = input("Enter customer ID (e.g., A181): ")
+        customer_id = input("Enter customer ID (e.g., A180): ")
     recommendation = product_recommendation(customer_id)
 
     print("-" * 50)
@@ -58,18 +58,18 @@ def run_system(face_image=None, voice_audio=None, customer_id=None):
 
 def simulate_all():
     print("=== SIMULATING UNAUTHORIZED ATTEMPT UNKNOWN FACE ===")
-    run_system(face_image=BASE_DIR / "Assets/Images/unauthorized_person.jpg", voice_audio=BASE_DIR / "Assets/Audios/Sougnabe_confirm.mp4", customer_id="A181")
+    run_system(face_image=BASE_DIR / "Assets/Images/unauthorized_person.jpeg", voice_audio=BASE_DIR / "Assets/Audios/Sougnabe_confirm.mp4", customer_id="A180")
     print("\n" + "="*50 + "\n")
     print("=== SIMULATING UNAUTHORIZED ATTEMPT MISMATCH FACE AND VOICE ===")
-    run_system(face_image=BASE_DIR / "Assets/Images/Lorita_neutral.jpg", voice_audio=BASE_DIR / "Assets/Audios/Jacques_approve.mp4", customer_id="A181")
+    run_system(face_image=BASE_DIR / "Assets/Images/Lorita_neutral.jpeg", voice_audio=BASE_DIR / "Assets/Audios/Jacques_approve.mp4", customer_id="A180")
     print("=== SIMULATING UNKNOWN CUSTOMER ID ===")
     try:
-        run_system(face_image=BASE_DIR / "Assets/Images/Wagner_neutral.jpg", voice_audio=BASE_DIR / "Assets/Audios/Wagner_approve.wav", customer_id="A1")
+        run_system(face_image=BASE_DIR / "Assets/Images/Wagner_neutral.jpeg", voice_audio=BASE_DIR / "Assets/Audios/Wagner_approve.wav", customer_id="A180")
     except Exception as e:
         print(e)
     print("\n" + "="*50 + "\n")
     print("=== SIMULATING AUTHORIZED ATTEMPT ===")
-    run_system(face_image=BASE_DIR / "Assets/Images/Lorita_neutral.jpg", voice_audio=BASE_DIR / "Assets/Audios/Lorita_confirm.mp4", customer_id="A181")
+    run_system(face_image=BASE_DIR / "Assets/Images/Lorita_neutral.jpeg", voice_audio=BASE_DIR / "Assets/Audios/Lorita_confirm.mp4", customer_id="A180")
 
 
 if __name__ == "__main__":
